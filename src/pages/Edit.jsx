@@ -40,7 +40,7 @@ const EditPage = () =>{
     return (
         <div> 
         <div ref ={memRef} className="meme mt-5 mb-5">
-        <img src = {params.get("url")} width ='250px'></img>
+        <img src = {params.get("url")} width ='250px' alt="imgURL"></img>
         {Array(count).fill(0).map((e, i) => (
             <Text key={i} />
         ))}
